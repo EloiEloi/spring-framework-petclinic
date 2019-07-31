@@ -78,6 +78,13 @@
         <docker.image.prefix>springcommunity</docker.image.prefix>
 
     </properties>
+    
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <url>http://localhost:8081/repository/petclinic-snapshots/</url>
+         </snapshotRepository>
+    </distributionManagement>
 
     <dependencyManagement>
         <dependencies>
@@ -97,10 +104,7 @@
             </dependency>
         </dependencies>
 
-         <snapshotRepository>
-            <id>nexus-snapshots</id>
-            <url>http://localhost:8081/repository/petclinic-snapshots/</url>
-         </snapshotRepository>
+        
 
         
         
